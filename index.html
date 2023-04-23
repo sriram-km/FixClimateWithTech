@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>FixClimateWithTech</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/print.css" type="text/css" rel="stylesheet" media="print" />
+    <meta name="theme-color" content="#5d6879" />
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+    <div id="searchBox">
+        <select id="type">
+            <option value="meal">Meal</option>
+            <option value="food">Food</option>
+            <option value="transport">Transport</option>
+            <option value="electricity">Electricity</option>
+            <option value="purchase">Purchase</option>
+            <option value="fashion">Fashion</option>
+            <option value="streaming">Streaming</option>
+        </select>
+        <select id="category" autofocus>
+            <option value="none">--select--</option>
+        </select>
+        <input type="number" id="quantity">
+        <input type="button" id="add" value="Add">
+        <input type="button" id="reset" value="Reset">
+        <input type="button" id="print" value="Print">
+    </div>
+
+    <div id="emissionPane">
+        <img src="images/logo.png" />
+        <h4 id="co2-emission"><span id="co2">0</span> kgCO2eq</h4>
+    </div>
+
+    <div id="tweetBox">
+        <q id="tweet-quote"></q>
+        <button id="tweet-it-button">Tweet it <i class="fa-brands fa-twitter"></i></button>
+    </div>
+
+    <div id="data">
+    <div id="piechart"></div>
+
+    <table id="co2Table">
+        <tr>
+            <th>SNo</th>
+            <th>Source</th>
+            <th>Type</th>
+            <th>kgCO2eq per unit</th>
+            <th>Units consumed</th>
+            <th>Total CO2</th>
+        </tr>
+    </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/calculator.js"></script>
+
+</body>
+
+</html>

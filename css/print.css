@@ -1,0 +1,12 @@
+body * {
+    visibility: hidden;
+}
+body {
+    visibility: visible;
+    -webkit-print-color-adjust: exact;
+    background-color: var(--color-3) !important;
+    color: var(--color-5) !important;
+}
+#data, #data *, #emissionPane *, #tweet-quote {
+visibility: visible;
+}

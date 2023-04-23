@@ -1,0 +1,128 @@
+:root {
+	--color-1: #05386B;
+	--color-2: #379683;
+	--color-3: #5CDB95;
+	--color-4: #8EE4AF;
+	--color-5: #EDF5E1;
+}
+
+body {
+	background-color: var(--color-3);
+	color: var(--color-5);
+}
+
+#searchBox {
+	display: flex;
+	justify-content: space-between;
+	margin: 2% 10%;
+}
+
+#searchBox > select,
+#searchBox>input,
+#searchBox>button {
+	background-color: var(--color-1);
+	color: var(--color-5);
+	text-align: center;
+	padding: 10px;
+	font-size: large;
+	width: 20%;
+}
+
+#searchBox > #add, #searchBox > #reset, #searchBox > #print{
+	width: 10%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+#emissionPane {
+	padding: 2% 0% 1% 0%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#emissionPane>img {
+	width: 10%;
+}
+
+#emissionPane>img {
+	width: 8%;
+}
+
+#emissionPane>#co2-emission {
+	padding: 1% 0%;
+}
+
+#emissionPane>#co2-emission>#co2 {
+	font-size: 50px;
+}
+
+#tweetBox {
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	width: 40%;
+	margin: 0% 30%;
+	opacity: 0;
+}
+
+#tweetBox #tweet-quote {
+	font-size: 20px;
+}
+
+#tweet-it-button {
+	background-color: #1DA1F2;
+	color: white;
+	border: none;
+	padding: 10px;
+	display: block;
+	width: 100px;
+	margin: auto;
+	margin-top: 2%;
+}
+
+#piechart {
+	width: fit-content;
+	margin: 0 auto;
+}
+
+#co2Table{
+    margin: auto;
+	opacity: 0;
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+}
+
+table, th, td {
+  border: 2px solid var(--color-1);
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px 10px;
+
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-2);
+  color: var(--color-5);
+}
+
+tr:nth-child(odd) {
+	background-color: var(--color-4);
+	color: var(--color-1);
+}
+
+@media print {
+	
+  }
